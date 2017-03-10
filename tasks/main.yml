@@ -1,0 +1,22 @@
+
+#- name: See if percona has been downloaded already
+#  stat: path=/opt/percona-toolkit.rpm
+#  register: mysql_toolkit_exists
+#
+#
+#- name: Download percona toolkit
+#  get_url:
+#    url=http://percona.com/get/percona-toolkit.rpm
+#    dest=/opt/percona-toolkit.rpm
+#  become: yes
+#  when: mysql_toolkit_exists.stat.exists == False
+#
+#
+#- name: Install percona rpm.
+#  yum: name=/opt/percona-toolkit.rpm  state=present
+#  become: yes
+#  when: mysql_toolkit_exists.stat.exists == False
+
+- include: repository.yml
+  tags: "percona:repo"
+
