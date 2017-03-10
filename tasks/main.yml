@@ -20,3 +20,5 @@
 - include: repository.yml
   tags: "percona:repo"
 
+- include: install.yml
+  tags: "percona:install"

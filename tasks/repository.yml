@@ -1,0 +1,5 @@
+
+- name: Add percona yum repository
+  yum:
+    name: "http://www.percona.com/downloads/percona-release/redhat/{{percona_toolkit_repo_version}}/percona-release-{{percona_toolkit_repo_version}}.noarch.rpm"
+    state: present
