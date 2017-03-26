@@ -5,3 +5,15 @@
     name: "{{item}}"
     state: latest
   with_items: "{{percona_toolkit_packages}}"
+
+
+
+
+- name: Install other mysql tools from yum
+  yum:
+    name: "{{item}}"
+    state: latest
+  with_items: "{{mysql_tool_packages}}"
+
+
+

@@ -3,3 +3,11 @@
   yum:
     name: "http://www.percona.com/downloads/percona-release/redhat/{{percona_toolkit_repo_version}}/percona-release-{{percona_toolkit_repo_version}}.noarch.rpm"
     state: present
+
+
+
+
+- name: Add mydumper yum repository
+  yum:
+    name: "https://twindb.com/twindb-release-latest.noarch.rpm"
+    state: present

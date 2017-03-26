@@ -1,5 +1,11 @@
+percona_toolkit: True
+
 percona_toolkit_repo_version: 0.1-4
 
 percona_toolkit_packages:
   - percona-toolkit
-  - xtrabackup
+  - percona-xtrabackup-24
+
+
+mysql_tool_packages:
+  - mydumper
