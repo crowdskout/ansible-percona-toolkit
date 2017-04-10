@@ -1,5 +1,11 @@
 
 
+- name: Ensure older packages are removed
+  yum:
+    name: "{{item}}"
+    state: absent
+  with_items: "{{percona_toolkit_remove_packages}}"
+
 - name: Install packages from percona repo
   yum:
     name: "{{item}}"

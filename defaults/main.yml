@@ -9,3 +9,7 @@ percona_toolkit_packages:
 
 mysql_tool_packages:
   - mydumper
+
+
+percona_toolkit_remove_packages:
+  - percona-xtrabackup-2.3.7
