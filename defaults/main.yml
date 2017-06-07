@@ -6,10 +6,18 @@ percona_toolkit_packages:
   - percona-toolkit
   - percona-xtrabackup-24
 
+mysql_tool_packages: []
+#  - mydumper
+# install this from source to get 0.9.1
 
-mysql_tool_packages:
-  - mydumper
-
-
+#yum remove mydumper Percona-Server-devel-56.x86_64
+#yum install glib2-devel mysql-devel zlib-devel pcre-devel openssl-devel cmake gcc gcc-c++ mysql-community-devel mysql-community-libs
+#ln -s /usr/lib64/mysql/libmysqlclient.so /usr/lib64/libmysqlclient.so
+#wget https://github.com/maxbube/mydumper/archive/v0.9.1.tar.gz
+#tar xvzf v0.9.1.tar.gz
+#cd mydumper-0.9.1/
+#cmake .
+#make
+#make install
 percona_toolkit_remove_packages:
   - percona-xtrabackup-2.3.7
