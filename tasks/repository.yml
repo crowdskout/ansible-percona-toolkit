@@ -6,8 +6,11 @@
 
 
 
-
 - name: Add mydumper yum repository
-  yum:
-    name: "https://twindb.com/twindb-release-latest.noarch.rpm"
-    state: present
+  shell: curl -s https://packagecloud.io/install/repositories/twindb/main/script.rpm.sh | sudo bash
+
+#
+#- name: Add mydumper yum repository
+#  yum:
+#    name: "https://twindb.com/twindb-release-latest.noarch.rpm"
+#    state: present
