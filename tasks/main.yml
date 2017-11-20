@@ -1,6 +1,6 @@
 
-- include: repository.yml
+- import_tasks: repository.yml
   tags: "percona:repo"
 
-- include: install.yml
+- import_tasks: install.yml
   tags: "percona:install"
