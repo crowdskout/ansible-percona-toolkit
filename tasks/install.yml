@@ -16,6 +16,7 @@
   yum:
     name: "{{item}}"
     state: latest
+    enablerepo: percona-release*
   with_items: "{{percona_toolkit_packages}}"
 
 
@@ -23,6 +24,7 @@
   yum:
     name: "{{item}}"
     state: latest
+    enablerepo: percona-release*
   with_items: "{{mysql_tool_packages}}"
 
 
