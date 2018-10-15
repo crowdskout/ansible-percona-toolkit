@@ -1,6 +1,10 @@
 
 - import_tasks: repository.yml
-  tags: "percona:repo"
+  tags:
+    - percona:repo
+    - percona
 
 - import_tasks: install.yml
-  tags: "percona:install"
+  tags:
+    - percona:install
+    - percona

@@ -20,6 +20,13 @@
   with_items: "{{percona_toolkit_packages}}"
 
 
+
+- name: Remove old mydumper file
+  file:
+    path: /usr/local/bin/mydumper
+    state: absent
+
+
 - name: Install other mysql tools from yum
   yum:
     name: "{{item}}"
