@@ -2,9 +2,8 @@
 
 - name: Ensure older packages are removed
   yum:
-    name: "{{item}}"
+    name: "{{percona_toolkit_remove_packages}}"
     state: absent
-  with_items: "{{percona_toolkit_remove_packages}}"
 
 - name: install perl-dbd-mysql outside of percona
   yum:
@@ -14,25 +13,18 @@
 
 - name: Install packages from percona repo
   yum:
-    name: "{{item}}"
+    name: "{{percona_toolkit_packages}}"
     state: latest
     enablerepo: percona-release*
-  with_items: "{{percona_toolkit_packages}}"
 
 
-
-- name: Remove old mydumper file
-  file:
-    path: /usr/local/bin/mydumper
-    state: absent
 
 
 - name: Install other mysql tools from yum
   yum:
-    name: "{{item}}"
+    name: "{{mysql_tool_packages}}"
     state: latest
     enablerepo: percona-release*
-  with_items: "{{mysql_tool_packages}}"
 
 
 

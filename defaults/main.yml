@@ -1,13 +1,12 @@
 percona_toolkit: True
 
-percona_toolkit_repo_version: 0.1-4
+percona_toolkit_repo_version: 0.1-6
 
 percona_toolkit_packages:
   - percona-toolkit
   - percona-xtrabackup-24
 
-mysql_tool_packages:
-  - mydumper
+mysql_tool_packages: []
 
 
 # install this from source to get 0.9.1
