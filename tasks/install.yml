@@ -5,11 +5,11 @@
     name: "{{percona_toolkit_remove_packages}}"
     state: absent
 
-- name: install perl-dbd-mysql outside of percona
-  yum:
-    name: perl-DBD-MySQL
-    state: latest
-    disablerepo: percona-release*
+#- name: install perl-dbd-mysql outside of percona
+#  yum:
+#    name: perl-DBD-MySQL
+#    state: latest
+#    disablerepo: percona*
 
 - name: Install packages from percona repo
   yum:

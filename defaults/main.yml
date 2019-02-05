@@ -1,6 +1,5 @@
 percona_toolkit: True
 
-percona_toolkit_repo_version: 0.1-6
 
 percona_toolkit_packages:
   - percona-toolkit
