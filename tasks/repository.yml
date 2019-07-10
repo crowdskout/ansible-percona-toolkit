@@ -5,6 +5,6 @@
     state: present
 
 
-- name: Add mydumper yum repository
-  shell: curl -s https://packagecloud.io/install/repositories/twindb/main/script.rpm.sh | sudo bash
+# - name: Add mydumper yum repository
+#   shell: curl -s https://packagecloud.io/install/repositories/twindb/main/script.rpm.sh | sudo bash
 
