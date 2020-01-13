@@ -11,20 +11,20 @@
 #    state: latest
 #    disablerepo: percona*
 
-- name: Install packages from percona repo
-  yum:
-    name: "{{percona_toolkit_packages}}"
-    state: latest
-    enablerepo: percona-release*
+# - name: Install packages from percona repo
+#   yum:
+#     name: "{{percona_toolkit_packages}}"
+#     state: latest
+#     enablerepo: percona-release*
 
 
 
 
-- name: Install other mysql tools from yum
-  yum:
-    name: "{{mysql_tool_packages}}"
-    state: latest
-    enablerepo: percona-release*
+# - name: Install other mysql tools from yum
+#   yum:
+#     name: "{{mysql_tool_packages}}"
+#     state: latest
+#     enablerepo: percona-release*
 
 
 
